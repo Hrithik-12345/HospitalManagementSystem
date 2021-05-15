@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Booking</title>
+<link rel="stylesheet" href="login.css">
+<style>
+body{
+background-image: url(https://image.shutterstock.com/image-photo/lamp-operating-room-hospital-600w-553740730.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+
+}
+</style>
+</head>
+<body>
+<a href="ShowReservedBed">View ReservedBed</a>
+<form action="ReservedBedHospital" method="post">
+    <div class="loginbox">
+            <h1>Reserved Bed</h1>
+                <label>Patient Name</label>
+                <input type="text" name="PatientName" placeholder="Enter your name" required/>
+                <label>Patient Age</label>
+                <input type="number" name="PatientAge" placeholder="Enter your age" required/>
+                 <label>Phone Number</label>
+                <input type="number" name="PatientMobileNo" placeholder="Enter phone number" required/>
+                <label> Date</label>
+                <input type="date" name="Date" placeholder="Enter date ReservingBed" required/>
+                <label>Bed Quantity</label>
+                <input type="number" name="BedQuant" placeholder="Enter Bed Required" required/>
+                <input type="submit" value="Reserved">
+        </div>
+        </form>  
+</body>
+</html>

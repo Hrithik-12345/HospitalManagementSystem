@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ .slider
+{
+    width: 85%;
+    margin-left: 13%;
+    padding: 0px 10px;
+}
+ </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hospital Management</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="ReservedBed">BookCovidBed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Doctors</a>
+        </li>
+        
+        
+      <li class="nav-item">
+        <form action="logout"><button class="btn btn-outline-success" style="color:green;font-weight: 700;border:1px solid black;">Log Out</button></form>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" class="d-block w-100" width="700" height="600" alt="Image is loading">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" class="d-block w-100" width="1400" height="600" alt="Image is loading">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1560582861-45078880e48e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG9zcGl0YWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" class="d-block w-100" width="700" height="600" alt="Image is loading">
+    </div>
+  </div>
+   <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+              </ol>
+</div>
+</body>
+</html>

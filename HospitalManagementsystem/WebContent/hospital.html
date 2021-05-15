@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html>
+<head>
+<title>Hospital Management system</title>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body{
+background-image:url("https://images.unsplash.com/photo-1512069511692-b82d787265cf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+background-size:cover;
+}
+</style>
+<body>
+<a href="ShowHospital">View Hospital</a>
+<form action="AdminHospital" method="post">
+    <div class="loginbox">
+            <h1>ADD HOSPITAL</h1>
+                <label>Hospital Name</label>
+                <input type="text" name="HospitalName" placeholder="Enter hospital name"/>
+                <label>Hospital Type</label>
+                <input type="text" name="HospitalType" placeholder="Enter hospital type"/>
+                <label>Total Beds </label>
+                <input type="number" name="TotalBeds" placeholder="Enter total Beds"/>
+                <label>Available Rooms</label>
+                <input type="number" name="AvailableBeds" placeholder="Enter available Beds"/>
+                <input type="submit" value="Add">
+        </div>
+        </form>   
+</body>
+</html>            

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hospital Management</title>
+<link rel="stylesheet" href="login.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	
+console.log("Page is ready");
+
+$("#myform").on('submit',function(event){
+	event.preventDefault();
+	
+	var f = $(this).serialize();
+	
+	console.log(f);
+	
+	$.ajax({
+		url: "Signup",
+		data: f,
+	    type: 'POST',
+	    success: function(data,textStatus,jqXHR){
+	    	console.log(data);
+	    	console.log("success..........");
+	    	
+	    	
+	    },
+	    error: function(jqXHR,textStatus,errorThrown){
+	    	console.log(data);
+	    	console.log("error............");	
+	    }
+	    
+	})	
+})
+
+})
+	
+</script>
+
+<style>
+body {
+background-image:url("https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80");
+background-size:cover;
+}
+</style>
+</head>
+<body>
+<a href="login.html">Login Now</a>
+<form action="Signup" method="post" id="myform">
+    <div class="loginbox">
+            <h1>Sign up Here</h1>
+                <label>Name</label>
+                <input type="text" name="UserName" placeholder="Enter your name"/>
+                <label>Phone Number</label>
+                <input type="number" name="PhoneNumber" placeholder="Enter phone number"/>
+                 <label>Email ID</label>
+                <input type="text" name="EmailID" placeholder="Enter email id"/>
+                <label>Password</label>
+                <input type="password" name="Password" placeholder="Enter your password"/>
+                <input type="submit" value="Signup">
+        </div>
+        </form>   
+</body>
+</html>               

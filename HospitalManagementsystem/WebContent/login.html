@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Hospital</title>
+<link rel="stylesheet"type="text/css"href="login.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>         
+ $(document).ready(function(){
+		$("button").click(function(){
+			$("p").toggle(1000);
+		});
+ });
+</script>
+</head>
+<style>
+body {
+background-image:url("https://image.shutterstock.com/image-illustration/hospital-building-sign-closeup-sky-600w-399077326.jpg");
+background-size:cover;
+}
+</style>
+<body>
+
+<p> Welcome to Hospital Management System<br>Thank you for visiting this site</p>
+ <button class="btn btn-outline-danger">Click to hide this add</button> 
+<div class="loginbox">
+
+<h1> Login here</h1>
+<form action="Login" method="post"> 
+<p>username</p>
+<input type="text" name="username" placeholder="Enter username">
+<p> Password</p>
+<input type="password" name="password" placeholder="Enter password">
+<input type="submit" value="Login">
+<a href="#">Lost your password?</a><br>
+<a href="#">Don't have an account?</a><br>
+<a href="Signup.html">signup first</a><br>
+</form>
+</div>
+</body>
+
+</html> 
